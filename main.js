@@ -10,7 +10,7 @@
         let baseUrl = "https://docs.google.com/forms/d/e/ID/formResponse?"
 
         pram.map(v=>{
-            baseUrl = ${baseUrl}entry.${v.id}=${v.input}&
+            baseUrl = `${baseUrl}entry.${v.id}=${v.input}&`
         })
 
         baseUrl = encodeURI(baseUrl)
